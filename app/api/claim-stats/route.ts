@@ -6,7 +6,8 @@ import { bsc } from "viem/chains";
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
-const CLAIM_CONTRACT = "0xb4921c02D58bBEF6F0999d74C45F6DC27a876876" as const;
+const CLAIM_CONTRACT =
+  "0xb4921c02D58bBEF6F0999d74C45F6DC27a876876" as const;
 
 const claimAbi = [
   {
@@ -58,10 +59,17 @@ export async function GET() {
         }),
       ]);
 
-    const totalPool = 450_000_000n * 10n ** 18n;
-    const distributed = totalPool - remaining;
+    // Use BigInt() instead of BigInt literal syntax.
+    const totalPool =
+      BigInt("450000000") * BigInt("10") ** BigInt("18");
+
+    // Actual amount claimed from the contract.
+    const distributed = totalClaimed;
+
     const percentage =
-      Number((distributed * 10_000n) / totalPool) / 100;
+      Number(
+        (distributed * BigInt("10000")) / totalPool
+      ) / 100;
 
     return NextResponse.json(
       {
