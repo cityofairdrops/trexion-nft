@@ -29,7 +29,7 @@ const faqs = [
       <>
         <p>
           The total supply of $TREXION is 1,000,000,000 tokens,
-          distributed as follows:
+          distributed across four allocations:
         </p>
         <ul>
           <li>
@@ -38,13 +38,13 @@ const faqs = [
           </li>
           <li>
             <strong>35% — Liquidity:</strong> 350,000,000 tokens.
-            15% of the total supply unlocks at TGE; the remaining
-            20% will be locked for 12 months.
+            150,000,000 tokens unlock at TGE; the remaining
+            200,000,000 are locked for 12 months.
           </li>
           <li>
             <strong>10% — Marketing:</strong> 100,000,000 tokens.
-            5% of the total supply unlocks at TGE; the remaining
-            5% will be locked for 12 months.
+            50,000,000 tokens unlock at TGE; the remaining
+            50,000,000 are locked for 12 months.
           </li>
           <li>
             <strong>10% — Team:</strong> 100,000,000 tokens,
@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     q: "When will $TREXION be listed on exchanges?",
-    a: "$TREXION is planned to be listed on decentralized exchanges (DEXs) immediately after the airdrop claim period ends, allowing holders to trade their tokens. Centralized exchange (CEX) listings may follow. Details regarding exchange partnerships and listing announcements will be communicated through official Trexion channels."
+    a: "$TREXION is planned to be listed on decentralized exchanges (DEXs) immediately after the airdrop claim period ends. Centralized exchange (CEX) listings may follow. Official announcements will be shared through Trexion's official channels."
   }
 ];
 
@@ -71,6 +71,7 @@ export default function Home() {
         <nav>
           <a href="#mint">Mint</a>
           <a href="#rewards">Rewards</a>
+          <a href="#tokenomics">Tokenomics</a>
           <a href="#how">How to mint</a>
           <a href="#faq">FAQ</a>
         </nav>
@@ -246,6 +247,166 @@ export default function Home() {
         </div>
       </section>
 
+      {/* TOKENOMICS SECTION */}
+      <section id="tokenomics" className="tokenomics-section section-wrap">
+        <div className="section-heading">
+          <div className="eyebrow">
+            <i /> $TREXION TOKEN
+          </div>
+          <h2>
+            Built for the
+            <br />
+            <em>community.</em>
+          </h2>
+          <p>
+            $TREXION is the community token powering the Trexion ecosystem.
+            Its fixed total supply is allocated across community rewards,
+            liquidity, marketing and the team.
+          </p>
+        </div>
+
+        <div className="token-overview">
+          <div className="token-total">
+            <span className="stat-label">TOTAL TOKEN SUPPLY</span>
+            <strong>1,000,000,000</strong>
+            <span>$TREXION</span>
+          </div>
+
+          <div className="token-facts">
+            <div>
+              <span>Token</span>
+              <strong>$TREXION</strong>
+            </div>
+            <div>
+              <span>Launch chain</span>
+              <strong>BNB Smart Chain</strong>
+            </div>
+            <div>
+              <span>Token standard</span>
+              <strong>BEP-20</strong>
+            </div>
+            <div>
+              <span>Chain ID</span>
+              <strong>56 · Mainnet</strong>
+            </div>
+          </div>
+        </div>
+
+        <div className="tokenomics-content">
+          <div className="token-chart-panel">
+            <h3>Token allocation</h3>
+            <p className="chart-caption">
+              Distribution of the total 1 billion $TREXION supply
+            </p>
+
+            <div
+              className="token-pie"
+              role="img"
+              aria-label="Community 45 percent, Liquidity 35 percent, Marketing 10 percent, Team 10 percent."
+            >
+              <div className="token-pie-center">
+                <strong>100%</strong>
+                <span>TOTAL SUPPLY</span>
+              </div>
+            </div>
+
+            <div className="token-legend">
+              <div>
+                <i className="legend-community" />
+                <span>Community</span>
+                <strong>45%</strong>
+              </div>
+              <div>
+                <i className="legend-liquidity" />
+                <span>Liquidity</span>
+                <strong>35%</strong>
+              </div>
+              <div>
+                <i className="legend-marketing" />
+                <span>Marketing</span>
+                <strong>10%</strong>
+              </div>
+              <div>
+                <i className="legend-team" />
+                <span>Team</span>
+                <strong>10%</strong>
+              </div>
+            </div>
+          </div>
+
+          <div className="allocation-list">
+            <h3>Allocation details</h3>
+
+            <article>
+              <div className="allocation-title">
+                <span>
+                  <i className="legend-community" />
+                  Community
+                </span>
+                <strong>45%</strong>
+              </div>
+              <b>450,000,000 $TREXION</b>
+              <p>Fully unlocked at TGE.</p>
+            </article>
+
+            <article>
+              <div className="allocation-title">
+                <span>
+                  <i className="legend-liquidity" />
+                  Liquidity
+                </span>
+                <strong>35%</strong>
+              </div>
+              <b>350,000,000 $TREXION</b>
+              <p>
+                150,000,000 tokens (15% of total supply) unlock at TGE.
+                The remaining 200,000,000 tokens (20%) are locked for
+                12 months.
+              </p>
+            </article>
+
+            <article>
+              <div className="allocation-title">
+                <span>
+                  <i className="legend-marketing" />
+                  Marketing
+                </span>
+                <strong>10%</strong>
+              </div>
+              <b>100,000,000 $TREXION</b>
+              <p>
+                50,000,000 tokens (5% of total supply) unlock at TGE.
+                The remaining 50,000,000 tokens (5%) are locked for
+                12 months.
+              </p>
+            </article>
+
+            <article>
+              <div className="allocation-title">
+                <span>
+                  <i className="legend-team" />
+                  Team
+                </span>
+                <strong>10%</strong>
+              </div>
+              <b>100,000,000 $TREXION</b>
+              <p>Locked for 12 months.</p>
+            </article>
+          </div>
+        </div>
+
+        <div className="unlock-summary">
+          <div>
+            <strong>65%</strong>
+            <span>UNLOCKED AT TGE</span>
+          </div>
+          <div>
+            <strong>35%</strong>
+            <span>LOCKED FOR 12 MONTHS</span>
+          </div>
+        </div>
+      </section>
+
       <section id="how" className="how-section section-wrap">
         <div className="section-heading centered">
           <div className="eyebrow">
@@ -328,7 +489,9 @@ export default function Home() {
                 {item.q}
                 <b>+</b>
               </summary>
-              <div className="faq-answer">{item.a}</div>
+              <div className="faq-answer">
+                {item.a}
+              </div>
             </details>
           ))}
         </div>
