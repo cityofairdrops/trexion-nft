@@ -1,3 +1,4 @@
+
 import MintPanel from "./mint-panel";
 
 const artwork =
@@ -10,11 +11,15 @@ const faqs = [
   },
   {
     q: "How many NFTs can I mint?",
-    a: "There is no per-wallet mint limit. The only limit is the collection's total supply of 10,000 NFTs.",
+    a: "Each wallet can mint a maximum of 10 NFTs in total. Transferring NFTs does not restore your mint allowance.",
   },
   {
     q: "What is the mint price?",
-    a: "The website currently displays the first mint as FREE. The deployed contract actually charges 0.00002 BNB for the first NFT and 0.0011 BNB for each additional NFT. Network gas fees also apply.",
+    a: "The first NFT per wallet is completely free. Each additional NFT costs 0.001 BNB. Network gas fees apply.",
+  },
+  {
+    q: "How does the free mint work?",
+    a: "Every wallet receives one free NFT. You can mint up to 9 additional NFTs from the same wallet at 0.001 BNB each.",
   },
   {
     q: "What are the airdrop rewards?",
@@ -22,7 +27,7 @@ const faqs = [
   },
   {
     q: "When can I claim the airdrop?",
-    a: "The $TREXION airdrop claim will open after the NFT minting phase concludes. Eligible NFT holders will be able to claim through the official Trexion platform.",
+    a: "The $TREXION airdrop claim will open immediately after the NFT minting period ends. Eligibility and allocation are subject to the quantity of NFTs held.",
   },
   {
     q: "What is the $TREXION tokenomics?",
@@ -100,16 +105,19 @@ export default function Home() {
           <strong>10,000</strong>
           <small>Genesis NFTs</small>
         </div>
+
         <div>
           <span className="stat-label">NETWORK</span>
           <strong>BNB</strong>
           <small>BNB Smart Chain</small>
         </div>
+
         <div>
           <span className="stat-label">MAX MINT LIMIT</span>
-          <strong>No Limit</strong>
+          <strong>10 NFTs</strong>
           <small>Per wallet</small>
         </div>
+
         <div>
           <span className="stat-label">HOLDER REWARD</span>
           <strong>45,000</strong>
@@ -122,14 +130,17 @@ export default function Home() {
           <div className="eyebrow">
             <i /> THE GENESIS DROP
           </div>
+
           <h2>
             Your place in
             <br />
             <em>Trexion starts here.</em>
           </h2>
+
           <p>
             Mint your Trexion Genesis NFT directly through Binance Agentic
-            Wallet. Track the collection's live mint progress below.
+            Wallet. Your first NFT is free, and each additional NFT costs
+            0.001 BNB. Track the collection's live mint progress below.
           </p>
         </div>
 
@@ -155,10 +166,10 @@ export default function Home() {
             </p>
 
             <p className="reward-disclaimer">
-  Airdrop eligibility and allocation are subject to the quantity of NFTs
-  held. Airdrop claims will be available immediately after the minting
-  period ends.
-</p>
+              Airdrop eligibility and allocation are subject to the
+              quantity of NFTs held. Airdrop claims will be available
+              immediately after the minting period ends.
+            </p>
           </div>
 
           <div className="reward-number">
@@ -175,11 +186,13 @@ export default function Home() {
           <div className="eyebrow">
             <i /> $TREXION TOKEN
           </div>
+
           <h2>
             Built for the
             <br />
             <em>community.</em>
           </h2>
+
           <p>
             $TREXION is the community token powering the Trexion ecosystem.
             Its total supply is allocated across community rewards,
@@ -332,6 +345,7 @@ export default function Home() {
           <div className="eyebrow">
             <i /> GETTING STARTED
           </div>
+
           <h2>
             Three steps.
             <br />
@@ -375,11 +389,13 @@ export default function Home() {
           <div className="eyebrow">
             <i /> THE COLLECTION
           </div>
+
           <h2>
             One artwork.
             <br />
             <em>10,000 identities.</em>
           </h2>
+
           <p>
             Every NFT shares the Trexion Genesis artwork and receives
             its own unique token number, from Trexion #1 to Trexion #10000.
@@ -396,6 +412,7 @@ export default function Home() {
           <div className="eyebrow">
             <i /> NEED TO KNOW
           </div>
+
           <h2>
             Frequently asked
             <br />
@@ -411,6 +428,7 @@ export default function Home() {
                 {item.q}
                 <b>+</b>
               </summary>
+
               <div className="faq-answer">
                 <p>{item.a}</p>
               </div>
@@ -423,7 +441,9 @@ export default function Home() {
         <a className="brand" href="#">
           TREXION<span>.</span>
         </a>
+
         <p>THE GENESIS NFT COLLECTION · BNB SMART CHAIN</p>
+
         <span>
           © {new Date().getFullYear()} TREXION. ALL RIGHTS RESERVED.
         </span>
