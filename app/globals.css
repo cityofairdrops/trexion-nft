@@ -1074,3 +1074,216 @@ h2 em {
   }
 }
 
+/* TREXION MINT PANEL */
+
+.trexion-mint {
+  width: 100%;
+  max-width: 430px;
+  justify-self: end;
+}
+
+.mint-progress-heading,
+.mint-progress-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.mint-progress-heading {
+  margin: 25px 0 12px;
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  color: #9eaaa1;
+}
+
+.mint-progress-heading strong {
+  color: var(--green);
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
+.mint-progress-track {
+  height: 10px;
+  background: #26342a;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.mint-progress-fill {
+  height: 100%;
+  min-width: 0;
+  background: var(--green);
+  border-radius: 20px;
+  box-shadow: 0 0 15px #55ff7860;
+  transition: width 0.6s ease;
+}
+
+.mint-progress-foot {
+  margin: 9px 0 15px;
+  font-size: 11px;
+  color: #8f9c92;
+}
+
+.mint-progress-foot span:last-child {
+  color: var(--green);
+}
+
+.mint-load-error {
+  color: #ffb56b;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.mint-quantity {
+  padding-top: 22px;
+}
+
+.mint-quantity label {
+  display: block;
+  margin-bottom: 12px;
+  color: #9eaaa1;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+.quantity-control {
+  display: grid;
+  grid-template-columns: 52px 1fr 52px;
+  height: 48px;
+  border: 1px solid #34583d;
+  background: #080c09;
+}
+
+.quantity-control button {
+  border: 0;
+  background: #142219;
+  color: var(--green);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.quantity-control button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.quantity-control input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: white;
+  text-align: center;
+  font: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.quantity-control input::-webkit-inner-spin-button,
+.quantity-control input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.mint-copy-button {
+  width: 100%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.mint-copy-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.mint-contract-link {
+  display: block;
+  margin-top: 17px;
+  color: var(--green);
+  font-size: 11px;
+  text-align: center;
+}
+
+.mint-instructions {
+  margin-top: 16px;
+  border: 1px solid var(--line);
+  background: #0b100d;
+}
+
+.mint-instructions-toggle {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 0;
+  background: transparent;
+  color: #e8f0e9;
+  text-align: left;
+  font: inherit;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  cursor: pointer;
+}
+
+.mint-instructions-toggle b {
+  color: var(--green);
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.mint-instructions-content {
+  padding: 0 20px 20px;
+}
+
+.mint-instructions-content article {
+  display: flex;
+  gap: 15px;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.mint-instructions-content article > span {
+  color: var(--green);
+  font-size: 12px;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+}
+
+.mint-instructions-content h4 {
+  margin: 0 0 8px;
+  color: #f4f8f4;
+  font-size: 14px;
+}
+
+.mint-instructions-content article p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.mint-warning {
+  margin: 15px 0 0;
+  padding: 13px;
+  border: 1px solid #59442a;
+  background: #21190f;
+  color: #e7bd85;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+  .trexion-mint {
+    width: 100%;
+    max-width: 520px;
+    margin: auto;
+    justify-self: center;
+  }
+}
