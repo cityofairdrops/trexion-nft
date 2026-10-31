@@ -1,5 +1,6 @@
 
 import MintPanel from "./mint-panel";
+import ClaimPanel from "./claim-panel";
 
 const artwork =
   "https://raw.githubusercontent.com/cityofairdrops/trexion-nft/main/trexion.png";
@@ -23,15 +24,23 @@ const faqs = [
   },
   {
     q: "What are the airdrop rewards?",
-    a: "Each eligible NFT is allocated 45,000 $TREXION through the community airdrop, subject to the official snapshot and claim process.",
+    a: "Each NFT originally minted by your wallet earns an allocation of 45,000 $TREXION. Your claim entitlement is tied to the original minter, not the wallet currently holding the NFT.",
   },
   {
-    q: "When can I claim the airdrop?",
-    a: "The $TREXION airdrop claim will open immediately after the NFT minting period ends. Eligibility and allocation are subject to the quantity of NFTs held.",
+    q: "How do I claim my TREXION?",
+    a: "Copy the Agentic Wallet claim prompt from the Claim section, paste it into your Agentic Wallet, and review the eligibility and transaction details. The smart contract verifies your allocation.",
+  },
+  {
+    q: "Can I claim more than once?",
+    a: "Yes. If you mint additional NFTs after an earlier claim, you can claim the allocation for those newly minted NFTs. Previously claimed NFTs cannot be claimed again. Each successful claim costs 0.00015 BNB.",
+  },
+  {
+    q: "What is the maximum claim allocation?",
+    a: "Each wallet can receive up to 450,000 $TREXION for a maximum of 10 originally minted NFTs.",
   },
   {
     q: "What is the $TREXION tokenomics?",
-    a: "The total supply is 1,000,000,000 $TREXION: 45% Community, 35% Liquidity, 10% Marketing and 10% Team. The stated unlock schedule is subject to the official token launch.",
+    a: "The total supply is 1,000,000,000 $TREXION: 45% Community, 35% Liquidity, 10% Marketing and 10% Team. Refer to the official token allocation and unlock information for details.",
   },
   {
     q: "When will $TREXION be listed?",
@@ -50,6 +59,7 @@ export default function Home() {
         <nav>
           <a href="#mint">Mint</a>
           <a href="#rewards">Rewards</a>
+          <a href="#claim">Claim</a>
           <a href="#tokenomics">Tokenomics</a>
           <a href="#how">How to mint</a>
           <a href="#faq">FAQ</a>
@@ -59,6 +69,8 @@ export default function Home() {
           Explore mint <span>↗</span>
         </a>
       </header>
+
+      {/* HERO */}
 
       <section className="hero section-wrap">
         <div className="hero-copy">
@@ -77,6 +89,7 @@ export default function Home() {
             <a className="button button-primary" href="#mint">
               Explore the mint <span>↗</span>
             </a>
+
             <a className="text-link" href="#rewards">
               Discover rewards <span>↓</span>
             </a>
@@ -85,19 +98,27 @@ export default function Home() {
 
         <div className="hero-art">
           <div className="art-glow" />
+
           <div className="art-frame">
-            <img src={artwork} alt="Trexion Genesis NFT artwork" />
+            <img
+              src={artwork}
+              alt="Trexion Genesis NFT artwork"
+            />
+
             <div className="art-label">
               <span>GENESIS / 001</span>
               <span>BNB CHAIN</span>
             </div>
           </div>
+
           <div className="floating-tag">
             10,000
             <small>GENESIS NFTs</small>
           </div>
         </div>
       </section>
+
+      {/* COLLECTION STATS */}
 
       <section className="stats section-wrap">
         <div>
@@ -125,6 +146,8 @@ export default function Home() {
         </div>
       </section>
 
+      {/* NFT MINT */}
+
       <section id="mint" className="mint-section section-wrap">
         <div className="section-heading">
           <div className="eyebrow">
@@ -147,6 +170,8 @@ export default function Home() {
         <MintPanel />
       </section>
 
+      {/* REWARDS */}
+
       <section id="rewards" className="rewards-section">
         <div className="section-wrap rewards-inner">
           <div>
@@ -161,25 +186,37 @@ export default function Home() {
             </h2>
 
             <p>
-              Each eligible Trexion Genesis NFT is allocated 45,000
-              $TREXION tokens through the community airdrop.
+              Each NFT originally minted by your wallet earns an
+              allocation of 45,000 $TREXION through the community
+              airdrop.
             </p>
 
             <p className="reward-disclaimer">
-              Airdrop eligibility and allocation are subject to the
-              quantity of NFTs held. Airdrop claims will be available
-              immediately after the minting period ends.
+              Claim entitlement belongs to the original minter and
+              is not transferred when an NFT is sold or transferred.
+              You can make additional claims when you mint more
+              eligible NFTs.
             </p>
+
+            <a className="button button-primary" href="#claim">
+              Claim your TREXION <span>↗</span>
+            </a>
           </div>
 
           <div className="reward-number">
-            <span>ALLOCATION PER ELIGIBLE NFT</span>
+            <span>ALLOCATION PER ORIGINALLY MINTED NFT</span>
             <strong>45,000</strong>
             <b>$TREXION</b>
             <small>COMMUNITY AIRDROP</small>
           </div>
         </div>
       </section>
+
+      {/* TREXION TOKEN CLAIM */}
+
+      <ClaimPanel />
+
+      {/* TOKENOMICS */}
 
       <section id="tokenomics" className="tokenomics-section section-wrap">
         <div className="section-heading">
@@ -212,14 +249,17 @@ export default function Home() {
               <span>Token</span>
               <strong>$TREXION</strong>
             </div>
+
             <div>
               <span>Launch chain</span>
               <strong>BNB Smart Chain</strong>
             </div>
+
             <div>
               <span>Token standard</span>
               <strong>BEP-20</strong>
             </div>
+
             <div>
               <span>Chain ID</span>
               <strong>56 · Mainnet</strong>
@@ -230,6 +270,7 @@ export default function Home() {
         <div className="tokenomics-content">
           <div className="token-chart-panel">
             <h3>Token allocation</h3>
+
             <p className="chart-caption">
               Distribution of the total 1 billion $TREXION supply
             </p>
@@ -251,16 +292,19 @@ export default function Home() {
                 <span>Community</span>
                 <strong>45%</strong>
               </div>
+
               <div>
                 <i className="legend-liquidity" />
                 <span>Liquidity</span>
                 <strong>35%</strong>
               </div>
+
               <div>
                 <i className="legend-marketing" />
                 <span>Marketing</span>
                 <strong>10%</strong>
               </div>
+
               <div>
                 <i className="legend-team" />
                 <span>Team</span>
@@ -278,10 +322,12 @@ export default function Home() {
                   <i className="legend-community" />
                   Community
                 </span>
+
                 <strong>45%</strong>
               </div>
+
               <b>450,000,000 $TREXION</b>
-              <p>Fully unlocked at TGE.</p>
+              <p>Community allocation.</p>
             </article>
 
             <article>
@@ -290,12 +336,15 @@ export default function Home() {
                   <i className="legend-liquidity" />
                   Liquidity
                 </span>
+
                 <strong>35%</strong>
               </div>
+
               <b>350,000,000 $TREXION</b>
               <p>
-                150,000,000 tokens unlock at TGE. The remaining
-                200,000,000 tokens are locked for 12 months.
+                Liquidity allocation. Refer to official launch
+                documentation for applicable liquidity and unlock
+                arrangements.
               </p>
             </article>
 
@@ -305,13 +354,12 @@ export default function Home() {
                   <i className="legend-marketing" />
                   Marketing
                 </span>
+
                 <strong>10%</strong>
               </div>
+
               <b>100,000,000 $TREXION</b>
-              <p>
-                50,000,000 tokens unlock at TGE. The remaining
-                50,000,000 tokens are locked for 12 months.
-              </p>
+              <p>Marketing allocation.</p>
             </article>
 
             <article>
@@ -320,25 +368,18 @@ export default function Home() {
                   <i className="legend-team" />
                   Team
                 </span>
+
                 <strong>10%</strong>
               </div>
+
               <b>100,000,000 $TREXION</b>
-              <p>Locked for 12 months.</p>
+              <p>Team allocation.</p>
             </article>
           </div>
         </div>
-
-        <div className="unlock-summary">
-          <div>
-            <strong>65%</strong>
-            <span>UNLOCKED AT TGE</span>
-          </div>
-          <div>
-            <strong>35%</strong>
-            <span>LOCKED FOR 12 MONTHS</span>
-          </div>
-        </div>
       </section>
+
+      {/* HOW TO MINT */}
 
       <section id="how" className="how-section section-wrap">
         <div className="section-heading centered">
@@ -384,6 +425,8 @@ export default function Home() {
         </div>
       </section>
 
+      {/* COLLECTION */}
+
       <section className="collection-section section-wrap">
         <div className="collection-copy">
           <div className="eyebrow">
@@ -403,9 +446,14 @@ export default function Home() {
         </div>
 
         <div className="collection-image">
-          <img src={artwork} alt="Trexion collection artwork" />
+          <img
+            src={artwork}
+            alt="Trexion collection artwork"
+          />
         </div>
       </section>
+
+      {/* FAQ */}
 
       <section id="faq" className="faq-section section-wrap">
         <div className="section-heading">
@@ -436,6 +484,8 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* FOOTER */}
 
       <footer className="footer section-wrap">
         <a className="brand" href="#">
