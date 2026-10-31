@@ -197,11 +197,7 @@ export default function Home() {
             Minting opens soon
           </button>
 
-          <p className="fine-print">
-            *First mint has a 0.00002 BNB contract payment and is displayed
-            as nearly free. Network gas is paid separately. Minting will
-            open after contract deployment.
-          </p>
+      
         </div>
       </section>
 
