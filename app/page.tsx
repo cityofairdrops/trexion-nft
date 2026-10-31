@@ -155,10 +155,10 @@ export default function Home() {
             </p>
 
             <p className="reward-disclaimer">
-              Airdrop eligibility is subject to the official snapshot,
-              verification and claim process. Snapshot and claim dates
-              will be announced officially.
-            </p>
+  Airdrop eligibility and allocation are subject to the quantity of NFTs
+  held. Airdrop claims will be available immediately after the minting
+  period ends.
+</p>
           </div>
 
           <div className="reward-number">
