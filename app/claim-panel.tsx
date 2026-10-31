@@ -153,7 +153,7 @@ Important: Never ask me to expose my private key or seed phrase.`;
   );
 
   return (
-    <section className="trexion-claim" id="claim">
+    <section className="trexion-claim">
       <div className="claim-container">
         <div className="claim-heading">
           <span className="claim-eyebrow">
