@@ -83,14 +83,10 @@ export default function Home() {
 
       <section className="hero section-wrap">
         <div className="hero-copy">
-          <div className="eyebrow">
-            <i /> THE GENESIS NFT COLLECTION
-          </div>
-
           <h1>
             MINT THE
             <br />
-            <em>FUTURE.</em>
+            <em>DINOSAURS.</em>
           </h1>
 
           <p className="hero-lead">
@@ -105,10 +101,6 @@ export default function Home() {
             <a className="text-link" href="#rewards">
               Discover rewards <span>↓</span>
             </a>
-          </div>
-
-          <div className="hero-note">
-            <span className="pulse" /> BUILT FOR THE COMMUNITY
           </div>
         </div>
 
@@ -509,3 +501,4 @@ export default function Home() {
     </main>
   );
 }
+
