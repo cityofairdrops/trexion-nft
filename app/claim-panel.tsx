@@ -319,8 +319,8 @@ Important: Never ask me to expose my private key or seed phrase.`;
 
           <div className="claim-address-row">
             <div>
-              <span>TREXION TOKEN</span>
-              <code>{TOKEN_ADDRESS}</code>
+              <span>$TREXION</span>
+<code>{TOKEN_ADDRESS}</code>
             </div>
 
             <button
