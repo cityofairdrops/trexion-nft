@@ -1,3 +1,4 @@
+
 const artwork =
   "https://raw.githubusercontent.com/cityofairdrops/trexion-nft/main/trexion.png";
 
@@ -20,7 +21,42 @@ const faqs = [
   },
   {
     q: "When can I claim the airdrop?",
-    a: "The snapshot and claim dates will be announced through official Trexion channels."
+    a: "The $TREXION airdrop claim will open immediately after the NFT minting phase concludes. Eligible NFT holders will be able to claim their allocated tokens through the official Trexion platform."
+  },
+  {
+    q: "What is the $TREXION tokenomics?",
+    a: (
+      <>
+        <p>
+          The total supply of $TREXION is 1,000,000,000 tokens,
+          distributed as follows:
+        </p>
+        <ul>
+          <li>
+            <strong>45% — Community:</strong> 450,000,000 tokens,
+            fully unlocked at TGE.
+          </li>
+          <li>
+            <strong>35% — Liquidity:</strong> 350,000,000 tokens.
+            15% of the total supply unlocks at TGE; the remaining
+            20% will be locked for 12 months.
+          </li>
+          <li>
+            <strong>10% — Marketing:</strong> 100,000,000 tokens.
+            5% of the total supply unlocks at TGE; the remaining
+            5% will be locked for 12 months.
+          </li>
+          <li>
+            <strong>10% — Team:</strong> 100,000,000 tokens,
+            locked for 12 months.
+          </li>
+        </ul>
+      </>
+    )
+  },
+  {
+    q: "When will $TREXION be listed on exchanges?",
+    a: "$TREXION is planned to be listed on decentralized exchanges (DEXs) immediately after the airdrop claim period ends, allowing holders to trade their tokens. Centralized exchange (CEX) listings may follow. Details regarding exchange partnerships and listing announcements will be communicated through official Trexion channels."
   }
 ];
 
@@ -28,7 +64,9 @@ export default function Home() {
   return (
     <main>
       <header className="navbar">
-        <a className="brand" href="#">TREXION<span>.</span></a>
+        <a className="brand" href="#">
+          TREXION<span>.</span>
+        </a>
 
         <nav>
           <a href="#mint">Mint</a>
@@ -44,9 +82,15 @@ export default function Home() {
 
       <section className="hero section-wrap">
         <div className="hero-copy">
-          <div className="eyebrow"><i /> THE GENESIS NFT COLLECTION</div>
+          <div className="eyebrow">
+            <i /> THE GENESIS NFT COLLECTION
+          </div>
 
-          <h1>MINT THE<br /><em>FUTURE.</em></h1>
+          <h1>
+            MINT THE
+            <br />
+            <em>FUTURE.</em>
+          </h1>
 
           <p className="hero-lead">
             10,000 unique NFTs. One growing community. Step into the
@@ -108,8 +152,14 @@ export default function Home() {
 
       <section id="mint" className="mint-section section-wrap">
         <div className="section-heading">
-          <div className="eyebrow"><i /> THE GENESIS DROP</div>
-          <h2>Your place in<br /><em>Trexion starts here.</em></h2>
+          <div className="eyebrow">
+            <i /> THE GENESIS DROP
+          </div>
+          <h2>
+            Your place in
+            <br />
+            <em>Trexion starts here.</em>
+          </h2>
           <p>
             The mint interface will activate when the NFT smart contract
             is deployed and connected.
@@ -122,7 +172,9 @@ export default function Home() {
               <span className="stat-label">TREXION GENESIS</span>
               <h3>Public mint</h3>
             </div>
-            <span className="status"><i /> COMING SOON</span>
+            <span className="status">
+              <i /> COMING SOON
+            </span>
           </div>
 
           <div className="mint-preview">
@@ -163,9 +215,15 @@ export default function Home() {
       <section id="rewards" className="rewards-section">
         <div className="section-wrap rewards-inner">
           <div>
-            <div className="eyebrow"><i /> GENESIS HOLDER REWARD</div>
+            <div className="eyebrow">
+              <i /> GENESIS HOLDER REWARD
+            </div>
 
-            <h2>Mint an NFT.<br /><em>Share in the airdrop.</em></h2>
+            <h2>
+              Mint an NFT.
+              <br />
+              <em>Share in the airdrop.</em>
+            </h2>
 
             <p>
               Each eligible Trexion Genesis NFT is allocated 45,000
@@ -190,15 +248,23 @@ export default function Home() {
 
       <section id="how" className="how-section section-wrap">
         <div className="section-heading centered">
-          <div className="eyebrow"><i /> GETTING STARTED</div>
-          <h2>Three steps.<br /><em>One Genesis collection.</em></h2>
+          <div className="eyebrow">
+            <i /> GETTING STARTED
+          </div>
+          <h2>
+            Three steps.
+            <br />
+            <em>One Genesis collection.</em>
+          </h2>
         </div>
 
         <div className="steps">
           <article>
             <span>01</span>
             <h3>Connect your wallet</h3>
-            <p>Use a compatible wallet connected to BNB Smart Chain.</p>
+            <p>
+              Use a compatible wallet connected to BNB Smart Chain.
+            </p>
           </article>
 
           <article>
@@ -223,8 +289,14 @@ export default function Home() {
 
       <section className="collection-section section-wrap">
         <div className="collection-copy">
-          <div className="eyebrow"><i /> THE COLLECTION</div>
-          <h2>One artwork.<br /><em>10,000 identities.</em></h2>
+          <div className="eyebrow">
+            <i /> THE COLLECTION
+          </div>
+          <h2>
+            One artwork.
+            <br />
+            <em>10,000 identities.</em>
+          </h2>
           <p>
             Every NFT shares the Trexion Genesis artwork and receives
             its own unique token number, from Trexion #1 to Trexion #10000.
@@ -238,8 +310,14 @@ export default function Home() {
 
       <section id="faq" className="faq-section section-wrap">
         <div className="section-heading">
-          <div className="eyebrow"><i /> NEED TO KNOW</div>
-          <h2>Frequently asked<br /><em>questions.</em></h2>
+          <div className="eyebrow">
+            <i /> NEED TO KNOW
+          </div>
+          <h2>
+            Frequently asked
+            <br />
+            <em>questions.</em>
+          </h2>
         </div>
 
         <div className="faq-list">
@@ -250,16 +328,20 @@ export default function Home() {
                 {item.q}
                 <b>+</b>
               </summary>
-              <p>{item.a}</p>
+              <div className="faq-answer">{item.a}</div>
             </details>
           ))}
         </div>
       </section>
 
       <footer className="footer section-wrap">
-        <a className="brand" href="#">TREXION<span>.</span></a>
+        <a className="brand" href="#">
+          TREXION<span>.</span>
+        </a>
         <p>THE GENESIS NFT COLLECTION · BNB SMART CHAIN</p>
-        <span>© {new Date().getFullYear()} TREXION. ALL RIGHTS RESERVED.</span>
+        <span>
+          © {new Date().getFullYear()} TREXION. ALL RIGHTS RESERVED.
+        </span>
       </footer>
     </main>
   );
