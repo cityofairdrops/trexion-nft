@@ -156,11 +156,7 @@ Important: Never ask me to expose my private key or seed phrase.`;
     <section className="trexion-claim">
       <div className="claim-container">
         <div className="claim-heading">
-          <span className="claim-eyebrow">
-            TREXION COMMUNITY DISTRIBUTION
-          </span>
-
-          <h2>Claim Your TREXION</h2>
+          <h2>Claim Your $TREXION</h2>
 
           <p>
             Your NFTs unlock your TREXION allocation.
@@ -253,11 +249,6 @@ Important: Never ask me to expose my private key or seed phrase.`;
             45,000 <span>TREXION / NFT</span>
           </div>
 
-          <p>
-            Every originally minted NFT earns 45,000 TREXION.
-            Maximum allocation: 450,000 TREXION per wallet.
-          </p>
-
           <div className="claim-rules">
             <div>
               <span>Per NFT</span>
@@ -272,11 +263,6 @@ Important: Never ask me to expose my private key or seed phrase.`;
             <div>
               <span>Maximum per wallet</span>
               <strong>450,000 TREXION</strong>
-            </div>
-
-            <div>
-              <span>Fee per claim</span>
-              <strong>0.00015 BNB</strong>
             </div>
           </div>
         </div>
@@ -349,22 +335,6 @@ Important: Never ask me to expose my private key or seed phrase.`;
 
           <div className="claim-address-row">
             <div>
-              <span>TREXION CLAIM CONTRACT</span>
-              <code>{CLAIM_ADDRESS}</code>
-            </div>
-
-            <button
-              type="button"
-              onClick={() =>
-                copyText(CLAIM_ADDRESS, "claim")
-              }
-            >
-              {copied === "claim" ? "Copied" : "Copy"}
-            </button>
-          </div>
-
-          <div className="claim-address-row">
-            <div>
               <span>NFT COLLECTION</span>
               <code>{NFT_ADDRESS}</code>
             </div>
@@ -397,12 +367,6 @@ Important: Never ask me to expose my private key or seed phrase.`;
             View TREXION Token on BscScan ↗
           </a>
         </div>
-
-        <p className="claim-footer">
-          TREXION operates on BNB Smart Chain.
-          Each successful claim requires 0.00015 BNB.
-          Claim eligibility is verified by the smart contract.
-        </p>
       </div>
     </section>
   );
