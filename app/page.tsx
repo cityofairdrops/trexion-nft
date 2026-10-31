@@ -51,6 +51,8 @@ const faqs = [
 export default function Home() {
   return (
     <main>
+      {/* NAVIGATION */}
+
       <header className="navbar">
         <a className="brand" href="#">
           TREXION<span>.</span>
@@ -100,10 +102,7 @@ export default function Home() {
           <div className="art-glow" />
 
           <div className="art-frame">
-            <img
-              src={artwork}
-              alt="Trexion Genesis NFT artwork"
-            />
+            <img src={artwork} alt="Trexion Genesis NFT artwork" />
 
             <div className="art-label">
               <span>GENESIS / 001</span>
@@ -212,9 +211,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TREXION TOKEN CLAIM */}
+      {/* TREXION CLAIM */}
 
-      <ClaimPanel />
+      <section id="claim" className="claim-page-section">
+        <ClaimPanel />
+      </section>
 
       {/* TOKENOMICS */}
 
@@ -322,7 +323,6 @@ export default function Home() {
                   <i className="legend-community" />
                   Community
                 </span>
-
                 <strong>45%</strong>
               </div>
 
@@ -336,7 +336,6 @@ export default function Home() {
                   <i className="legend-liquidity" />
                   Liquidity
                 </span>
-
                 <strong>35%</strong>
               </div>
 
@@ -354,7 +353,6 @@ export default function Home() {
                   <i className="legend-marketing" />
                   Marketing
                 </span>
-
                 <strong>10%</strong>
               </div>
 
@@ -368,7 +366,6 @@ export default function Home() {
                   <i className="legend-team" />
                   Team
                 </span>
-
                 <strong>10%</strong>
               </div>
 
@@ -446,10 +443,7 @@ export default function Home() {
         </div>
 
         <div className="collection-image">
-          <img
-            src={artwork}
-            alt="Trexion collection artwork"
-          />
+          <img src={artwork} alt="Trexion collection artwork" />
         </div>
       </section>
 
